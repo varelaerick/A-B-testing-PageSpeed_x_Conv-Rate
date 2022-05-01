@@ -53,9 +53,6 @@ To estimate the sample size, we need to consider Power analysis, and it depends 
 z-scores: -4.50
 p-value: 0.0000067659
 
-0.0000067659//2 
-
-3e-06
 
 The very, very low z-scores, associated with very small p-values, are found in the tails of the normal distribution.
 
