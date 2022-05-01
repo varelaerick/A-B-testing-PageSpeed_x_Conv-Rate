@@ -67,15 +67,15 @@ With Bootstrap, we resample the original sample with the same sample size and re
 
 It is a powerful tool that allows us to make inferences about the population statistics (e.g., mean, variance) when we only have a finite number of samples. Wich is our case since we are estimating website traffic conversion rate with a limited sample.
 
-<center>
+<p align="center">
 <img src="AB-Testing/histplot.png" width="800" height="400">
-</center>
+</p>
 
 After 10K iterations, it seems that the bootstrapped conversion rate means changed for both of the groups. We can also note an intersection between the two groups since the max value of Conv. rate presented for the control is larger than the min Conv. rate value shown for the treatment group in this experiment. 
 
-<center>
+<p align="center">
 <img src="AB-Testing/interception.png" width="800" height="400">
-</center>
+</p>
 
 ## Conclusion
 
