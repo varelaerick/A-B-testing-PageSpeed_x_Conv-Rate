@@ -1,33 +1,29 @@
 # A/B testing - Page Speed x Conv. Rate
-<br/>
+
 ## Motivation
-<br/>
+
 The project's objective is to check the A/B testing in daily usage. At Bloco-b.com, we usually optimize the speed of the client's website, looking for improvements in user experience. The goal of running that A/B test is to evaluate if a change in load speed also improves performance in the conversion rate because we note a significant difference in the conversion rate after the speed improvements in one of our client's website.
-<br/>
+
 ## Overview
-<br/>
+
 * Set Up The Experiment and Formulating a Hypothesis
 * Designing Experiment
 * Random Sampling of the data.  
 * Interpreting the results
 * Bootstrapping 
 * Conclusion
-<br/>
-<br/>
+
 ## Resources Used
  **Python Version**: 3.7<br/>
  **Packages**: pandas, statsmodels, math, scipy, plotly
-<br/>
+
 ## Data  
-  <br/>
 Here we will use the data extracted from google analytics for a determined period on our client's website. Each line represents a session, and we have three columns. 
-<br/>
+
 * Client_ID - Represent the unique user
 * Conversion -  Where 0 represents the sessions that do not convert
 * Group - Tha contains two values, Control and Treatment groups. That means users that came before and after the changes, respectively.  
  
- 
-<br/>
 ## 3 - Designing Experiment
 <br/>
 Since the difference in conversion rates between the two groups is 0.066, and the treatment group is greater than the control group's mean, we would like to check if this result is statistically significant.
