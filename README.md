@@ -63,15 +63,17 @@ The very, very low z-scores, associated with very small p-values, are found in t
 It is very unlikely (with small probability) that the observed conversion rate is the result of random processes, so we can reject the null hypothesis. That the website performs the same conversion rate after the page speed improvements. 
 
 ## Bootstrapping
-
-Bootstrapping is sampling with replacement from observed data to estimate the variability in a statistic of interest. With Bootstrap, we resample the original sample with the same sample size and replacement for many iterations.
+With Bootstrap, we resample the original sample with the same sample size and replacement for many iterations.
 
 It is a powerful tool that allows us to make inferences about the population statistics (e.g., mean, variance) when we only have a finite number of samples. Wich is our case since we are estimating website traffic conversion rate with a limited sample.
+
+<img src="AB-Testing/histplot.png" width="800" height="400">
 
 After 10K iterations, it seems that the bootstrapped conversion rate means changed for both of the groups. We can also note an intersection between the two groups since the max value of Conv. rate presented for the control is larger than the min Conv. rate value shown for the treatment group in this experiment. 
 
 
 <img src="AB-Testing/interception.png" width="800" height="400">
+
 ## Conclusion
 
 
