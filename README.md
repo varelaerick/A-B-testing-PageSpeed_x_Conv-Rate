@@ -70,6 +70,8 @@ It is a powerful tool that allows us to make inferences about the population sta
 
 After 10K iterations, it seems that the bootstrapped conversion rate means changed for both of the groups. We can also note an intersection between the two groups since the max value of Conv. rate presented for the control is larger than the min Conv. rate value shown for the treatment group in this experiment. 
 
+
+<img src="AB-Testing/intersection.png" width="800" height="400">
 ## Conclusion
 
 
