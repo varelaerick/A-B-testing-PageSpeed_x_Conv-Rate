@@ -24,7 +24,7 @@ Here we will use the data extracted from google analytics for a determined perio
 * Conversion -  Where 0 represents the sessions that do not convert
 * Group - Tha contains two values, Control and Treatment groups. That means users that came before and after the changes, respectively.  
  
-## 3 - Designing Experiment
+## Designing Experiment
 
 Since the difference in conversion rates between the two groups is 0.066, and the treatment group is greater than the control group's mean, we would like to check if this result is statistically significant.
 
@@ -50,6 +50,13 @@ To estimate the sample size, we need to consider Power analysis, and it depends 
 
 ##  Interpreting the Results
 
+z-scores: -4.50
+p-value: 0.0000067659
+
+0.0000067659//2 
+
+3e-06
+
 The very, very low z-scores, associated with very small p-values, are found in the tails of the normal distribution.
 
 **Since the half p-value is lower than our alpha (3e-06) so we can reject the Hₒ with 99% of confidence.**
@@ -67,6 +74,7 @@ It is a powerful tool that allows us to make inferences about the population sta
 After 10K iterations, it seems that the bootstrapped conversion rate means changed for both of the groups. We can also note an intersection between the two groups since the max value of Conv. rate presented for the control is larger than the min Conv. rate value shown for the treatment group in this experiment. 
 
 ## Conclusion
+
 
 Here we use statistical methods in a real-world experiment. 
 We reject the hypothesis's assumption that the conversion rate incremented after the speed change happened by a pure chance. 
